@@ -11,7 +11,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <RelativeLayout
+    <android.support.design.widget.CoordinatorLayout
         android:background="#234400"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,20 +24,34 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
 
-    </android.support.v7.widget.Toolbar>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-android:layout_alignParentBottom="true"
-            android:text="MAIn"/>
-    </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World!"
-        android:layout_gravity="start"
-        android:background="#662300"/>
+    </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_launcher"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+<android.support.design.widget.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:menu="@menu/nav_menu"
+    app:headerLayout="@layout/nav_header"
+    >
+
+</android.support.design.widget.NavigationView>
     </android.support.v4.widget.DrawerLayout>
 
 <!--</android.support.constraint.ConstraintLayout>-->
