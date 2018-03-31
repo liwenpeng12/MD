@@ -1,7 +1,7 @@
 package lwp.md.JavaBean;
 
 /**
- * Created by fh on 18-3-30.
+ * Created by liwenpeng on 18-3-30.
  */
 
 public class Fruit {
